@@ -19,7 +19,7 @@ export default function Nav() {
    </ul>
   
    </div>
-          <nav className='flex items-center px-4 bg-blue-800 justify-start '>
+          <nav className='flex h-16 items-center px-4 bg-blue-800 justify-start '>
             <button onClick={hi} className='lg:hidden bg-inherited text-white'>&#9776;</button>
 
             <h1 className="text-3xl font-bold text-left text-white px-6 ">

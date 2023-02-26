@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import Nav from './nav'
 import Image from 'next/image'
+import logo from '../../public/logo.jpg'
 import { Inter } from '@next/font/google'
+import Link from 'next/link'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -16,18 +18,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Nav/>
-      <header className=' relative w-full h-60 text-center'>
-      hh <Image src={""}  fill className="bg-blue-800 -z-10"/>
+      <header className=' relative w-full h-96 text-white font-bold text-3xl'>
+    No.1 Real Estate company <br/>
+   Buy property at afforadable cost <br/>
+    <Image src={logo}  fill className="bg-blue-800 -z-10"/>
       </header>
      <main className='p-10 flex flex-wrap '>
-     <div className="card w-fit h-fit p-2 border-2 rounded-xl m-4">
+    <Link href={"#"}> <div className="card w-fit h-fit p-2 border-2 rounded-xl m-4">
 <Image src={""} width={160}  height={80} className="bg-blue-800"/>
 price <button className='bg-blue-800 text-white ml-9 my-1 p-1 rounded-xl'>know more</button>
-</div>
-<div className="card w-fit h-fit p-2 border-2 rounded-xl m-4">
+</div></Link>
+<Link href={"#"}> <div className="card w-fit h-fit p-2 border-2 rounded-xl m-4">
 <Image src={""} width={160}  height={80} className="bg-blue-800"/>
 price <button className='bg-blue-800 text-white ml-9 my-1 p-1 rounded-xl'>know more</button>
-</div>
+</div></Link>
 
 
      </main>
